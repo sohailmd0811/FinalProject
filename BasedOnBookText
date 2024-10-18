@@ -26,7 +26,7 @@ std::string computeSHA256(const std::string &input) {
     };
 
     std::vector<unsigned char> message(input.begin(), input.end());
-    unsigned long long originalBitLength = input.size() * 8;
+    unsigned long originalBitLength = input.size() * 8;
 
     message.push_back(0x80);
 
